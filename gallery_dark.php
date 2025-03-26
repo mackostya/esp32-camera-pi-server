@@ -40,7 +40,7 @@
       unlink($_GET["delete"]);
     }
     else {
-      echo 'File not found - <a href="gallery.php">refresh</a>';
+      echo 'File not found - <a href="gallery2.php">refresh</a>';
     }
   }
   // Target directory
@@ -53,7 +53,7 @@
     foreach ($files as $file) {
       if ($file != '.' && $file != '..') {?>
         <div>
-          <p><a href="gallery.php?delete=<?php echo $dir . $file; ?>">Delete file</a> - <?php echo $file; ?></p>
+          <p><a href="gallery2.php?delete=<?php echo $dir . $file; ?>">Delete file</a> - <?php echo $file; ?></p>
           <a href="<?php echo $dir . $file; ?>">
             <img src="<?php echo $dir . $file; ?>" style="width: 350px;" alt="" title=""/>
           </a>
