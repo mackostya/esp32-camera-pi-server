@@ -21,7 +21,7 @@ class ScheduleTask(threading.Thread):
         while True:
             logging.info("Taking an image")
 
-            curent_time = f"{datetime.now().year}-{datetime.now().month}-{datetime.now().day}_{datetime.now().hour + 1:02d}:{datetime.now().minute:02d}"
+            curent_time = f"{datetime.now().year}-{datetime.now().month:02d}-{datetime.now().day:02d}_{datetime.now().hour + 1:02d}:{datetime.now().minute:02d}"
             take_image_prompt = f"libcamera-still --width 1536 --height 1024 -o /var/www/html/images/image{curent_time}.jpg"
             out = os.popen(take_image_prompt).read()
             logging.info(out)
