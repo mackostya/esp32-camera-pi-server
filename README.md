@@ -19,6 +19,18 @@ Run the following command to start the apache server
 sudo systemctl enable apache2
 sudo systemctl start apache2
 ```
+### php
+If the php is not visualied accordingly install following packages
+
+```
+sudo apt-get install php libapache2-mod-php
+```
+And start
+
+```
+sudo a2enmod php*
+sudo systemctl restart apache2
+```
 
 You can verify the apache server by opening the browser and typing the following address
 
