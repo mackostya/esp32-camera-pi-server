@@ -1,3 +1,7 @@
+# Raspberry PI Camera
+
+RaspberyPi comes with a presinstalled version of `libcamera-still`, which can be used for photo capturing. Consider not using Bullseye images (probable incompatibilities with camera).
+
 # ESP32-cam
 This is the project to create data transfer from ESP-32 camera to raspberry pi 3 using Arduino Uno and Arduino IDE.
 
